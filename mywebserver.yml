@@ -5,25 +5,25 @@
   tasks:
     - name: install webserver on RedHat node side
       yum:
-        name: httpd
+        name: "{{mywebpackredhat}}"
         state: present
       when: ansible_os_family == "RedHat"
 
     - name: Start web server on RedHat node side
       service:
-        name: httpd
+        name: h"{{mywebpackredhat}}"
         state: started
       when: ansible_os_family == "RedHat"
 
     - name: install webserver on debion node side
       apt:
-        name: apache2
+        name: "{{mywebpackdebian}}"
         state: present
       when: ansible_os_family == "Debian"
 
     - name: Start web server on Debian node side
       service:
-        name: apache2
+        name: "{{mywebpackdebian}}
         state: started
       when: ansible_os_family == "Debian"
     
