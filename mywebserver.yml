@@ -7,15 +7,27 @@
       apt:
         name: tree
         state: present
-    - name: install webserver on node side
+    - name: install webserver on RedHat node side
+      apt:
+        name: httpd
+        state: present
+      when: ansible_os_family == "RedHat"
+
+    - name: Start web server on RedHat node side
+      service:
+        name: httpd
+        state: started
+      when: ansible_os_family == "RedHat"
+
+    - name: install webserver on debion node side
       apt:
         name: apache2
         state: present
-    - name: install git on node side
-      apt:
-        name: git
-        state: present
-    - name: Start web server on debian node
+      when: ansible_os_family == "Debian"
+
+    - name: Start web server on Debian node side
       service:
-            name: apache2
-            state: started
+        name: apache2
+        state: started
+      when: ansible_os_family == "RedHat"
+    
