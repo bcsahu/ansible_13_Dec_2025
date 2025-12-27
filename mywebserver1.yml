@@ -1,0 +1,30 @@
+---
+- hosts: mywebservers
+  become: yes
+  gather_facts: yes
+
+  tasks:
+    - name: Install webserver on RedHat node side
+      yum:
+        name: "{{ mywebpackredhat }}"
+        state: present
+      when: ansible_os_family == "RedHat"
+
+    - name: Start web server on RedHat node side
+      service:
+        name: "{{ mywebpackredhat }}"
+        state: started
+      when: ansible_os_family == "RedHat"
+
+    - name: Install webserver on Debian node side
+      apt:
+        name: "{{ mywebpackdebian }}"
+        state: present
+        update_cache: yes
+      when: ansible_os_family == "Debian"
+
+    - name: Start web server on Debian node side
+      service:
+        name: "{{ mywebpackdebian }}"
+        state: started
+      when: ansible_os_family == "Debian"
