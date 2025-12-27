@@ -1,0 +1,7 @@
+---
+key: value
+mywebpackdebian: apache2
+mywebpackredhat: httpd
+
+myjavapackdebian: default-jdk
+myjavapackredhat: java-17-amazon-corretto

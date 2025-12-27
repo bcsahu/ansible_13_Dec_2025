@@ -1,0 +1,17 @@
+---
+- hosts: mywebservers
+  become: yes
+  gather_facts: yes
+  tasks:
+    - name: install java on Redhat node side
+      yum:
+        name: "{{ mywebpackredhat }}"
+        state: present
+    
+     
+    - name: install java  on debion node side
+      apt:
+        name: "{{ myjavapackdebian }}"
+        state: present
+   
+          
