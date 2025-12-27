@@ -7,20 +7,14 @@
       yum:
         name: "{{mywebpackredhat}}"
         state: present
-    
-
     - name: Start web server on RedHat node side
       service:
         name: "{{mywebpackredhat}}"
         state: started
-      
-
     - name: install webserver on debion node side
       apt:
         name: "{{mywebpackdebian}}"
         state: present
-      
-
     - name: Start web server on Debian node side
       service:
         name: "{{mywebpackdebian}}
