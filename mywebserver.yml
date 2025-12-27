@@ -11,7 +11,7 @@
 
     - name: Start web server on RedHat node side
       service:
-        name: h"{{mywebpackredhat}}"
+        name: "{{mywebpackredhat}}"
         state: started
       
 
