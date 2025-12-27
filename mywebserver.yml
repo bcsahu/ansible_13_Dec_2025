@@ -5,18 +5,18 @@
   tasks:
     - name: install webserver on RedHat node side
       yum:
-        name: "{{mywebpackredhat}}"
+        name: "{{ mywebpackredhat }}"
         state: present
     - name: Start web server on RedHat node side
       service:
-        name: "{{mywebpackredhat}}"
+        name: "{{ mywebpackredhat }}"
         state: started
     - name: install webserver on debion node side
       apt:
-        name: "{{mywebpackdebian}}"
+        name: "{{ mywebpackdebian }}"
         state: present
     - name: Start web server on Debian node side
       service:
-        name: "{{mywebpackdebian}}"
+        name: "{{ mywebpackdebian }}"
         state: started
           
