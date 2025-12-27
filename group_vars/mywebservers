@@ -4,4 +4,4 @@ mywebpackdebian: apache2
 mywebpackredhat: httpd
 
 myjavapackredhat: java-1.8.0-openjdk
-myjavapackdebian: openjdk-17-jdk
+myjavapackdebian: openjdk-11-jdk
