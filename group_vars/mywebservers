@@ -3,5 +3,6 @@ key: value
 mywebpackdebian: apache2
 mywebpackredhat: httpd
 
-myjavapackdebian: default-jdk
-myjavapackredhat: java-17-amazon-corretto
+
+myjavapackredhat: java-1.8.0-openjdk
+myjavapackdebian: openjdk-8-jdk
