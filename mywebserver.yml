@@ -3,10 +3,6 @@
   become: yes
   gather_facts: yes
   tasks:
-    - name: Install tree package
-      apt:
-        name: tree
-        state: present
     - name: install webserver on RedHat node side
       apt:
         name: httpd
