@@ -4,6 +4,6 @@
 172.31.1.174
 
 [mywebservers:vars]
-mywebpackdebian=apache299999
+mywebpackdebian=apache2
 mywebpackredhat=httpd
 
