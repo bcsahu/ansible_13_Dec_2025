@@ -1,7 +1,0 @@
----
-key: value
-mywebpackdebian: apache2
-mywebpackredhat: httpd
-
-myjavapackredhat: java-1.8.0-openjdk
-myjavapackdebian: openjdk-21-jdk
