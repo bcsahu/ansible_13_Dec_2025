@@ -1,7 +1,6 @@
 
  [mywebservers]
-172.31.8.245
-172.31.1.174
+172.31.11.125
 
 [mywebservers:vars]
 mywebpackdebian=apache2
