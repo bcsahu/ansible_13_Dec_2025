@@ -1,8 +1,5 @@
-
- [mywebservers]
-172.31.11.125
-
 [mywebservers:vars]
+key=value
 mywebpackdebian=apache2
 mywebpackredhat=httpd
 
