@@ -1,0 +1,6 @@
+---
+    - name: Download and deploy login.war
+      get_url:
+        url: https://mywarfile26jan24.s3.amazon.com/login.war
+        dest: /opt/tomcat/webapps/login.war
+        mode: '0644'

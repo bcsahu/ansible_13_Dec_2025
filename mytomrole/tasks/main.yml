@@ -1,3 +1,11 @@
 #SPDX-License-Identifier: MIT-0
 ---
 # tasks file for mytomrole
+- include_tasks: installjava.yml
+- include_tasks: tomcatrestart.yml
+- include_tasks: mypermission.yml
+- include_tasks: linkfiles.yml
+- include_tasks: downloadtomcat.yml
+- include_tasks: deployjavaapp.yml
+- include_tasks: dash.yml
+

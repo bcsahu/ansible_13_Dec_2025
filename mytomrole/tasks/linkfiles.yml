@@ -1,0 +1,14 @@
+---
+tasks:
+    - name: Create tomcatup symlink
+      file:
+        src: /opt/tomcat/bin/startup.sh
+        dest: /usr/local/bin/tomcatup
+        state: link
+
+    - name: Create tomcatdown symlink
+      file:
+        src: /opt/tomcat/bin/shutdown.sh
+        dest: /usr/local/bin/tomcatdown
+        state: link
+
