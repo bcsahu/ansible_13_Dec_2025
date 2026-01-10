@@ -1,0 +1,6 @@
+---
+key: value
+mywebpackdebian: apache2
+mywebpackredhat: httpd
+myjavapackdebian: openjdk-25-jdk
+myjavapackredhat: java-21-openjdk
