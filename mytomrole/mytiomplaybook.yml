@@ -1,5 +1,5 @@
 ---
-- hosts: myappservers
+- hosts: mywebservers
   become: yes
 
   roles:

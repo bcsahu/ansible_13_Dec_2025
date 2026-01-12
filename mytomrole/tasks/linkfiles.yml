@@ -1,5 +1,4 @@
 ---
-tasks:
     - name: Create tomcatup symlink
       file:
         src: /opt/tomcat/bin/startup.sh

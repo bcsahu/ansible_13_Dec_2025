@@ -1,9 +1,7 @@
 ---
-- name: Install Java using DNF
-  tasks:
     - name: Update package cache
       dnf:
-        update_cache: yes
+        update_cache:yes
 
     - name: Install Java 8
       dnf:
